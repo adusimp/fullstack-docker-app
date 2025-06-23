@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 2,
+  "agentName": "DESKTOP-OGODPTI",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus13.actions.githubusercontent.com/A6Y7R78ZVKCHxkndIiZtdg1wY82cXOe3yYPHOqPAmW9jp5hA94/",
+  "gitHubUrl": "https://github.com/adusimp/fullstack-docker-app",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}
