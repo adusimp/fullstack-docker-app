@@ -1,0 +1,50 @@
+version: "3.8"
+
+services:
+  # ✅ Frontend (Next.js)
+  frontend:
+    build: ./frontend
+    ports:
+      - "3001:3000"
+    depends_on:
+      - backend
+
+  # ✅ Backend (Express.js)
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+      - cache
+    environment:
+      DB_HOST: db
+      DB_USER: root
+      DB_PASSWORD: moichoigame2
+      DB_NAME: docker_ex
+      REDIS_HOST: cache
+      REDIS_PORT: 6379
+
+  # ✅ Database (MySQL)
+  db:
+    image: mysql:8.0
+    container_name: mysql-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: moichoigame2
+      MYSQL_DATABASE: docker_ex
+    ports:
+      - "3406:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./init:/docker-entrypoint-initdb.d
+
+  # ✅ Cache (Redis)
+  cache:
+    image: redis:alpine
+    container_name: redis-cache
+    ports:
+      - "6379:6379"
+
+volumes:
+  mysql-data:
