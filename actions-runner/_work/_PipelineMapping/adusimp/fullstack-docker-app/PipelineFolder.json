@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "adusimp/fullstack-docker-app",
+  "pipelineDirectory": "fullstack-docker-app",
+  "workspaceDirectory": "fullstack-docker-app\\fullstack-docker-app",
+  "repositories": {
+    "adusimp/fullstack-docker-app": {
+      "repositoryPath": "fullstack-docker-app\\fullstack-docker-app",
+      "lastRunOn": "06/23/2025 16:55:07 +07:00"
+    }
+  },
+  "lastRunOn": "06/23/2025 16:55:07 +07:00"
+}
