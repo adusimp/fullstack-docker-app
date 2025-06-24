@@ -12,9 +12,13 @@ jobs:
       DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
 
     steps:
+      - name: Debug Dockerfile
+        run: ls -la ./frontend
       - name: Checkout code
         uses: actions/checkout@v4
-
+        
+      - name: Debug Dockerfile
+        run: ls -la ./frontend
       - name: Build backend image
         run: docker build -t binhanvku462004/my-fullstack-backend:latest ./backend
 
