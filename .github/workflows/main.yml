@@ -19,22 +19,22 @@ jobs:
         run: docker build -t binhanvku462004/my-fullstack-backend:latest ./backend
 
       - name: Build frontend image
-        run: docker build -t $DOCKERHUB_USERNAME/my-fullstack-frontend:latest ./frontend
+        run: docker build -t binhanvku462004/my-fullstack-frontend:latest ./frontend
 
       - name: Login to Docker Hub
-        run: echo $DOCKERHUB_TOKEN | docker login -u $DOCKERHUB_USERNAME --password-stdin
+        run: echo $DOCKERHUB_TOKEN | docker login -u binhanvku462004 --moichoigame2-stdin
 
       - name: Push backend image
-        run: docker push $DOCKERHUB_USERNAME/my-fullstack-backend:latest
+        run: docker push binhanvku462004/my-fullstack-backend:latest
 
       - name: Push frontend image
-        run: docker push $DOCKERHUB_USERNAME/my-fullstack-frontend:latest
+        run: docker push binhanvku462004/my-fullstack-frontend:latest
 
       - name: Pull backend image
-        run: docker pull $DOCKERHUB_USERNAME/my-fullstack-backend:latest
+        run: docker pull binhanvku462004/my-fullstack-backend:latest
 
       - name: Pull frontend image
-        run: docker pull $DOCKERHUB_USERNAME/my-fullstack-frontend:latest
+        run: docker pull binhanvku462004/my-fullstack-frontend:latest
 
       - name: Stop and remove old containers
         run: docker-compose down || true
