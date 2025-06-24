@@ -1,0 +1,16 @@
+[gui]
+	recentrepo = D:/detaicuoiky1
+	recentrepo = C:/Users/DELL/eclipse-workspace/detaicuoiky1
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = binhan
+	email = nguyenduongbinhan.dmx@gmail.com
+[core]
+	editor = notepad
+	shell = C:\\\\Program Files\\\\Git\\\\bin\\\\bash.exe
+[safe]
+	directory = E:\\học tập\\01.AnNDB\\Docker\\fullstack-docker-app\\actions-runner\\_work\\fullstack-docker-app\\fullstack-docker-app
