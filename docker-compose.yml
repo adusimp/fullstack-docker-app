@@ -1,10 +1,41 @@
 version: '3.8'
+
 services:
   backend:
-    image: $DOCKERHUB_USERNAME/my-fullstack-backend:latest
+    image: ${DOCKERHUB_USERNAME}/my-fullstack-backend:latest
     ports:
       - '3000:3000'
+    depends_on:
+      - mysql
+      - redis
+    environment:
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=moichoigame2
+      - DB_NAME=docker_ex
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+
   frontend:
-    image: $DOCKERHUB_USERNAME/my-fullstack-frontend:latest
+    image: ${DOCKERHUB_USERNAME}/my-fullstack-frontend:latest
     ports:
       - '3001:3000'
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: moichoigame2
+      MYSQL_DATABASE: docker_ex
+    ports:
+      - '3406:3306'
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - '6379:6379'
+
+volumes:
+  mysql-data:

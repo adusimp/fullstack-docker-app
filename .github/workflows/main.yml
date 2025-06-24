@@ -3,7 +3,6 @@ name: Build, Push, Pull & Deploy (Self-hosted)
 on:
   push:
     branches: [main]
-
 jobs:
   build_push_pull_run:
     runs-on: self-hosted
@@ -15,25 +14,25 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Debug secrets
-        run: |
-        echo "Username: $DOCKERHUB_USERNAME"
-        echo "Token empty? [${DOCKERHUB_TOKEN}]"
-        env:
-          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Run ESLint
+        run: npm run lint
+
+      # 5. Check Prettier formatting
+      - name: Check Prettier formatting
+        run: npm run format
+        
       - name: Build backend image
         run: docker build -t binhanvku462004/my-fullstack-backend:latest ./backend
 
       - name: Build frontend image
-        run: docker build -t binhanvku462004/my-fullstack-frontend:latest ./frontend
+        run: docker build -t binhanvku462004/my-fullstack-frontend:latest ./frontend 
 
-      - name: Login to Docker Hub
-        run: echo $DOCKERHUB_TOKEN | docker login -u $DOCKERHUB_USERNAME --password-stdin
+      - name: Login to Docker Hub (Windows workaround)
+        run: docker login -u $env:DOCKERHUB_USERNAME -p $env:DOCKERHUB_TOKEN
+        shell: powershell
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
-
 
       - name: Push backend image
         run: docker push binhanvku462004/my-fullstack-backend:latest
@@ -48,7 +47,8 @@ jobs:
         run: docker pull binhanvku462004/my-fullstack-frontend:latest
 
       - name: Stop and remove old containers
-        run: docker-compose down || true
+        run: docker-compose down; exit 0
+        shell: powershell
 
       - name: Start new containers
         run: docker-compose up -d
