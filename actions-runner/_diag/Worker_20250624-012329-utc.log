@@ -1,0 +1,3943 @@
+[2025-06-24 01:23:29Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known config file 'Credentials': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\.credentials'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known config file 'Runner': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\.runner'
+[2025-06-24 01:23:29Z INFO Worker] Version: 2.325.0
+[2025-06-24 01:23:29Z INFO Worker] Commit: 71ed7cd46223bd5d61633445946813012b502d54
+[2025-06-24 01:23:29Z INFO Worker] Culture: en-US
+[2025-06-24 01:23:29Z INFO Worker] UI Culture: en-US
+[2025-06-24 01:23:29Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-06-24 01:23:29Z INFO ProcessChannel] Receiving message of length 23285, with hash '9eb3b3675a03decdf0e3f9ca399ac04ce12275034385d8d381b20e7d7443332b'
+[2025-06-24 01:23:29Z INFO Worker] Message received.
+[2025-06-24 01:23:29Z INFO Worker] Job message:
+ {
+  "environmentVariables": [
+    {
+      "type": 2,
+      "file": 1,
+      "line": 11,
+      "col": 7,
+      "map": [
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 11,
+            "col": 7,
+            "lit": "DOCKERHUB_USERNAME"
+          },
+          "value": {
+            "type": 3,
+            "file": 1,
+            "line": 11,
+            "col": 27,
+            "expr": "secrets.DOCKERHUB_USERNAME"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 12,
+            "col": 7,
+            "lit": "DOCKERHUB_TOKEN"
+          },
+          "value": {
+            "type": 3,
+            "file": 1,
+            "line": 12,
+            "col": 24,
+            "expr": "secrets.DOCKERHUB_TOKEN"
+          }
+        }
+      ]
+    }
+  ],
+  "fileTable": [
+    ".github/workflows/main.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 16,
+        "col": 15,
+        "lit": "Checkout code"
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "55c4d910-1030-4342-b8c4-19ed8a6deb1a",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 19,
+        "col": 15,
+        "lit": "Debug Dockerfile (Windows)"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 20,
+              "col": 14,
+              "lit": "dir ./frontend"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "402d8613-0f5f-4567-9049-a292ca2ca52a",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 21,
+        "col": 15,
+        "lit": "Build backend image"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 22,
+              "col": 14,
+              "lit": "docker build -t ***/my-fullstack-backend:latest ./backend"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "bf732bdc-1119-4837-b1b7-9d01117f9555",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 24,
+        "col": 15,
+        "lit": "Build frontend image"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 25,
+              "col": 14,
+              "lit": "docker build -t ***/my-fullstack-frontend:latest ./frontend"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "17dc4158-2499-4093-ab9e-31c21c404013",
+      "name": "__run_3"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 27,
+        "col": 15,
+        "lit": "Login to Docker Hub"
+      },
+      "contextName": "__run_4",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 28,
+              "col": 14,
+              "lit": "echo $DOCKERHUB_TOKEN | docker login -u *** --moichoigame2-stdin"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "e64f4006-a35e-495e-bc88-2f0773e7894e",
+      "name": "__run_4"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 30,
+        "col": 15,
+        "lit": "Push backend image"
+      },
+      "contextName": "__run_5",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 31,
+              "col": 14,
+              "lit": "docker push ***/my-fullstack-backend:latest"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "479cb036-f90c-46f5-b21a-bd4a1d7327fe",
+      "name": "__run_5"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 33,
+        "col": 15,
+        "lit": "Push frontend image"
+      },
+      "contextName": "__run_6",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 34,
+              "col": 14,
+              "lit": "docker push ***/my-fullstack-frontend:latest"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "c075e370-4ccb-435e-9c8b-3e8577874e06",
+      "name": "__run_6"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 36,
+        "col": 15,
+        "lit": "Pull backend image"
+      },
+      "contextName": "__run_7",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 37,
+              "col": 14,
+              "lit": "docker pull ***/my-fullstack-backend:latest"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "c6fcb24b-5c89-4d72-b0d8-16e40cdf48bf",
+      "name": "__run_7"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 39,
+        "col": 15,
+        "lit": "Pull frontend image"
+      },
+      "contextName": "__run_8",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 40,
+              "col": 14,
+              "lit": "docker pull ***/my-fullstack-frontend:latest"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "2d99143f-e53d-416a-8baa-bfb5bfb6f12c",
+      "name": "__run_8"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 42,
+        "col": 15,
+        "lit": "Stop and remove old containers"
+      },
+      "contextName": "__run_9",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 43,
+              "col": 14,
+              "lit": "docker-compose down || true"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "50f76e80-9c3a-4f0a-87fb-7af4baea5a07",
+      "name": "__run_9"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 45,
+        "col": 15,
+        "lit": "Start new containers"
+      },
+      "contextName": "__run_10",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 46,
+              "col": 14,
+              "lit": "docker-compose up -d"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "f3d7ae18-f1c2-4e4c-aa08-9523524eae4e",
+      "name": "__run_10"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 48,
+        "col": 15,
+        "lit": "Clean up old images"
+      },
+      "contextName": "__run_11",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 49,
+              "col": 14,
+              "lit": "docker image prune -f"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "b643c364-f799-41db-8b78-c49aa267e7ae",
+      "name": "__run_11"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DOCKERHUB_TOKEN": {
+      "value": "***",
+      "isSecret": true
+    },
+    "DOCKERHUB_USERNAME": {
+      "value": "***",
+      "isSecret": true
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "false"
+    },
+    "actions_display_helpful_actions_download_errors": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "build_push_pull_run"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "1c84b75e-3096-40bc-a34d-a01b3ec527cd.build_push_pull_run.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "build_push_pull_run"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "1c84b75e-3096-40bc-a34d-a01b3ec527cd",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "1c84b75e-3096-40bc-a34d-a01b3ec527cd",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "b5208d6f-935a-5c1b-8420-8f5f25340020",
+  "jobDisplayName": "build_push_pull_run",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/A6Y7R78ZVKCHxkndIiZtdg1wY82cXOe3yYPHOqPAmW9jp5hA94/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus13.actions.githubusercontent.com/A6Y7R78ZVKCHxkndIiZtdg1wY82cXOe3yYPHOqPAmW9jp5hA94/",
+          "GenerateIdTokenUrl": ""
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-1-azure-eastus.actions.githubusercontent.com/3/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "4644236c28c89c08461653588296a652c9641532"
+        },
+        {
+          "k": "repository",
+          "v": "adusimp/fullstack-docker-app"
+        },
+        {
+          "k": "repository_owner",
+          "v": "adusimp"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "144188896"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/adusimp/fullstack-docker-app.git"
+        },
+        {
+          "k": "run_id",
+          "v": "15838869921"
+        },
+        {
+          "k": "run_number",
+          "v": "9"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "144188896"
+        },
+        {
+          "k": "actor",
+          "v": "adusimp"
+        },
+        {
+          "k": "workflow",
+          "v": "Build, Push, Pull & Deploy (Self-hosted)"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "4644236c28c89c08461653588296a652c9641532"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "2afddbafbda33953d9187971a5e82b904cd87ca6"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "nguyenduongbinhan.dmx@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "binhan"
+                              },
+                              {
+                                "k": "username",
+                                "v": "adusimp"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "nguyenduongbinhan.dmx@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "binhan"
+                              },
+                              {
+                                "k": "username",
+                                "v": "adusimp"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "4644236c28c89c08461653588296a652c9641532"
+                        },
+                        {
+                          "k": "message",
+                          "v": "abc"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2025-06-24T08:23:19+07:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "101780d4b68d2f67b016be4020d1f2985c8269fe"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/adusimp/fullstack-docker-app/commit/4644236c28c89c08461653588296a652c9641532"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/adusimp/fullstack-docker-app/compare/2afddbafbda3...4644236c28c8"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "nguyenduongbinhan.dmx@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "binhan"
+                          },
+                          {
+                            "k": "username",
+                            "v": "adusimp"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "nguyenduongbinhan.dmx@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "binhan"
+                          },
+                          {
+                            "k": "username",
+                            "v": "adusimp"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "4644236c28c89c08461653588296a652c9641532"
+                    },
+                    {
+                      "k": "message",
+                      "v": "abc"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2025-06-24T08:23:19+07:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "101780d4b68d2f67b016be4020d1f2985c8269fe"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/adusimp/fullstack-docker-app/commit/4644236c28c89c08461653588296a652c9641532"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "144188896+adusimp@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "adusimp"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/adusimp/fullstack-docker-app.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1750669694.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "adusimp/fullstack-docker-app"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/adusimp/fullstack-docker-app.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/adusimp/fullstack-docker-app"
+                    },
+                    {
+                      "k": "id",
+                      "v": 1006968188.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "fullstack-docker-app"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOPAUdfA"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/144188896?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "144188896+adusimp@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/adusimp/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/adusimp/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/adusimp/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/adusimp/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/adusimp"
+                          },
+                          {
+                            "k": "id",
+                            "v": 144188896.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "adusimp"
+                          },
+                          {
+                            "k": "name",
+                            "v": "adusimp"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOCJgl4A"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/adusimp/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/adusimp/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/adusimp/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/adusimp/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/adusimp/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/adusimp"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1750728203.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 125430.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:adusimp/fullstack-docker-app.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/adusimp/fullstack-docker-app"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2025-06-24T01:22:33Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/adusimp/fullstack-docker-app"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/144188896?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/adusimp/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/adusimp/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/adusimp/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/adusimp/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/adusimp"
+                    },
+                    {
+                      "k": "id",
+                      "v": 144188896.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "adusimp"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOCJgl4A"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/adusimp/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/adusimp/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/adusimp/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/adusimp/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/adusimp/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/adusimp"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "adusimp/fullstack-docker-app/.github/workflows/main.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "4644236c28c89c08461653588296a652c9641532"
+        },
+        {
+          "k": "repository_id",
+          "v": "1006968188"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "adusimp"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOCJgl4A"
+}
+[2025-06-24 01:23:29Z INFO JobRunner] Job ID b5208d6f-935a-5c1b-8420-8f5f25340020
+[2025-06-24 01:23:29Z INFO ConfigurationStore] currentAssemblyLocation: E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin\Runner.Worker.dll
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO ConfigurationStore] binPath: E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO ConfigurationStore] RootFolder: E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known config file 'Runner': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\.runner'
+[2025-06-24 01:23:29Z INFO ConfigurationStore] ConfigFilePath: E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\.runner
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known config file 'MigratedRunner': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\.runner_migrated'
+[2025-06-24 01:23:29Z INFO ConfigurationStore] MigratedConfigFilePath: E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\.runner_migrated
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known config file 'Credentials': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\.credentials'
+[2025-06-24 01:23:29Z INFO ConfigurationStore] CredFilePath: E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\.credentials
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known config file 'MigratedCredentials': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\.credentials_migrated'
+[2025-06-24 01:23:29Z INFO ConfigurationStore] MigratedCredFilePath: E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\.credentials_migrated
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known config file 'Service': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\.service'
+[2025-06-24 01:23:29Z INFO ConfigurationStore] ServiceConfigFilePath: E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\.service
+[2025-06-24 01:23:29Z INFO ConfigurationStore] Read setting file: 407 chars
+[2025-06-24 01:23:29Z INFO JobRunner] Initializing launch client
+[2025-06-24 01:23:29Z INFO JobServerQueue] Initializing results client
+[2025-06-24 01:23:29Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-06-24 01:23:29Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2025-06-24 01:23:29Z INFO JobServerQueue] Start process web console line queue.
+[2025-06-24 01:23:29Z INFO JobServerQueue] Start process file upload queue.
+[2025-06-24 01:23:29Z INFO JobServerQueue] Start results file upload queue.
+[2025-06-24 01:23:29Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-06-24 01:23:29Z INFO JobServerQueue] Start process timeline update queue.
+[2025-06-24 01:23:29Z INFO ExecutionContext] Initializing Job context
+[2025-06-24 01:23:29Z INFO ExecutionContext] Initialize GitHub context
+[2025-06-24 01:23:29Z INFO ExecutionContext] Initialize Env context
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:29Z INFO JobRunner] Starting the job execution context.
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:29Z INFO JobRunner] Validating directory permissions for: 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Tools': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_tool'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Temp': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp'
+[2025-06-24 01:23:29Z INFO JobRunner] Getting job extension.
+[2025-06-24 01:23:29Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known config file 'Credentials': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\.credentials'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known config file 'SetupInfo': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\.setup_info'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:29Z INFO PipelineDirectoryManager] Loading tracking config if exists: E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_PipelineMapping\adusimp/fullstack-docker-app\PipelineFolder.json
+[2025-06-24 01:23:29Z INFO PipelineDirectoryManager] Updating job run properties.
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:29Z INFO JobExtension] Downloading actions
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:29Z INFO HostContext] Well known directory 'Actions': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions'
+[2025-06-24 01:23:29Z INFO Worker] Listening for cancel message from the channel.
+[2025-06-24 01:23:29Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-06-24 01:23:30Z INFO ResultServer] Successfully started websocket client.
+[2025-06-24 01:23:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record '65732f30-9c4b-47d8-9f71-9b8c7f8bcf15', success rate: 1/1.
+[2025-06-24 01:23:30Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:30Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:30Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:30Z INFO HostContext] Well known directory 'Actions': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions'
+[2025-06-24 01:23:30Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:30Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:30Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:30Z INFO HostContext] Well known directory 'Actions': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions'
+[2025-06-24 01:23:30Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/zipball/11bd71901bbe5b1630ceea73d27597364c9af683' into E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions\_temp_fcddf5a7-2dc0-4838-ad1d-0cfcfd5cd2db\760d5909-2534-48c6-873b-a0ac3b6cfb0f.zip.
+[2025-06-24 01:23:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record '65732f30-9c4b-47d8-9f71-9b8c7f8bcf15', success rate: 1/1.
+[2025-06-24 01:23:30Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-06-24 01:23:31Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/zipball/11bd71901bbe5b1630ceea73d27597364c9af683 X-GitHub-Request-Id: E423:8C52E:BFE19:324A1A:6859FE12 Http Status: OK
+[2025-06-24 01:23:31Z INFO ActionManager] Finished getting action repository.
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Actions': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions'
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Actions': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions'
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-24 01:23:31Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Actions': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions'
+[2025-06-24 01:23:31Z INFO ActionManager] Load action that reference repository from 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions\actions\checkout\v4'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Actions': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions'
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-24 01:23:31Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-06-24 01:23:31Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-06-24 01:23:31Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-06-24 01:23:31Z INFO JobExtension] Adding .
+[2025-06-24 01:23:31Z INFO JobExtension] Adding .
+[2025-06-24 01:23:31Z INFO JobExtension] Adding .
+[2025-06-24 01:23:31Z INFO JobExtension] Adding .
+[2025-06-24 01:23:31Z INFO JobExtension] Adding .
+[2025-06-24 01:23:31Z INFO JobExtension] Adding .
+[2025-06-24 01:23:31Z INFO JobExtension] Adding .
+[2025-06-24 01:23:31Z INFO JobExtension] Adding .
+[2025-06-24 01:23:31Z INFO JobExtension] Adding .
+[2025-06-24 01:23:31Z INFO JobExtension] Adding .
+[2025-06-24 01:23:31Z INFO JobExtension] Adding .
+[2025-06-24 01:23:31Z INFO JobExtension] Adding .
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO JobExtension] Total accessible running process: 247.
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:31Z INFO JobExtension] Start checking service connectivity in background.
+[2025-06-24 01:23:31Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "65732f30-9c4b-47d8-9f71-9b8c7f8bcf15",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 3,
+  "startTime": "2025-06-24T01:23:29.4524406Z",
+  "finishTime": "2025-06-24T01:23:31.6074057Z"
+}.
+[2025-06-24 01:23:31Z INFO JobRunner] Total job steps: 12.
+[2025-06-24 01:23:31Z INFO JobRunner] Run all job steps.
+[2025-06-24 01:23:31Z INFO StepsRunner] Processing step: DisplayName='Checkout code'
+[2025-06-24 01:23:31Z INFO StepsRunner] Evaluating: success()
+[2025-06-24 01:23:31Z INFO StepsRunner] Result: true
+[2025-06-24 01:23:31Z INFO StepsRunner] Starting the step.
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:31Z INFO StepsRunner] Which2: 'chcp'
+[2025-06-24 01:23:31Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Working directory: 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper] Process started with process id 13680, waiting for process exit.
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper] Finished process 13680 with exit code 0, and elapsed time 00:00:00.0093127.
+[2025-06-24 01:23:31Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Actions': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions'
+[2025-06-24 01:23:31Z INFO ActionManager] Load action that reference repository from 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions\actions\checkout\v4'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Actions': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions'
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-24 01:23:31Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-06-24 01:23:31Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-06-24 01:23:31Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-06-24 01:23:31Z INFO ExecutionContext] Reserve record order 14 to 26 for post job actions.
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Temp': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp'
+[2025-06-24 01:23:31Z INFO ExecutionContext] Write event payload to E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Temp': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp'
+[2025-06-24 01:23:31Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "adusimp/fullstack-docker-app"
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'ssh-user': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 51,
+  "col": 14,
+  "lit": "git"
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 54,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 59,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": ""
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": ""
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 76,
+  "col": 14,
+  "lit": "1"
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 79,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 94,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 97,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-24 01:23:31Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-06-24 01:23:31Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command error
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command group
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-06-24 01:23:31Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:31Z INFO HostContext] Well known directory 'Externals': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\externals'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   File name: 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\externals\node20\bin\node.exe'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Arguments: '"E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Working directory: 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\fullstack-docker-app\fullstack-docker-app'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-24 01:23:31Z INFO ProcessInvokerWrapper] Process started with process id 11556, waiting for process exit.
+[2025-06-24 01:23:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '65732f30-9c4b-47d8-9f71-9b8c7f8bcf15', success rate: 1/1.
+[2025-06-24 01:23:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:32Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2025-06-24 01:23:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:32Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-24 01:23:32Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag\blocks\1c84b75e-3096-40bc-a34d-a01b3ec527cd_65732f30-9c4b-47d8-9f71-9b8c7f8bcf15.1
+[2025-06-24 01:23:32Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-06-24 01:23:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:34Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-06-24 01:23:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:41Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:41Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:41Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper] Finished process 11556 with exit code 0, and elapsed time 00:00:14.0301992.
+[2025-06-24 01:23:45Z INFO CreateStepSummaryCommand] Step Summary file (E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp\_runner_file_commands\step_summary_1e8297b0-c101-4467-b8d5-2c0c37d8959a) is empty; skipping attachment upload
+[2025-06-24 01:23:45Z INFO StepsRunner] Step result: 
+[2025-06-24 01:23:45Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "55c4d910-1030-4342-b8c4-19ed8a6deb1a",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [
+    "no submodule mapping found in .gitmodules for path 'actions-runner/_work/fullstack-docker-app/fullstack-docker-app'",
+    "Unable to clean or reset the repository. The repository will be recreated instead."
+  ],
+  "executionTimeInSeconds": 15,
+  "startTime": "2025-06-24T01:23:31.6276701Z",
+  "finishTime": "2025-06-24T01:23:45.7616771Z"
+}.
+[2025-06-24 01:23:45Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-06-24 01:23:45Z INFO StepsRunner] Current state: job state = ''
+[2025-06-24 01:23:45Z INFO StepsRunner] Processing step: DisplayName='Debug Dockerfile (Windows)'
+[2025-06-24 01:23:45Z INFO StepsRunner] Evaluating: success()
+[2025-06-24 01:23:45Z INFO StepsRunner] Result: true
+[2025-06-24 01:23:45Z INFO StepsRunner] Starting the step.
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:45Z INFO StepsRunner] Which2: 'chcp'
+[2025-06-24 01:23:45Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Working directory: 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper] Process started with process id 960, waiting for process exit.
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper] Finished process 960 with exit code 0, and elapsed time 00:00:00.0081185.
+[2025-06-24 01:23:45Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Temp': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp'
+[2025-06-24 01:23:45Z INFO ExecutionContext] Write event payload to E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Temp': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp'
+[2025-06-24 01:23:45Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-06-24 01:23:45Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command error
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command group
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-06-24 01:23:45Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-06-24 01:23:45Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-06-24 01:23:45Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-06-24 01:23:45Z INFO ScriptHandler] Defaulting to powershell
+[2025-06-24 01:23:45Z INFO ScriptHandler] Which2: 'powershell'
+[2025-06-24 01:23:45Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:45Z INFO HostContext] Well known directory 'Temp': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp'
+[2025-06-24 01:23:45Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-06-24 01:23:45Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-06-24 01:23:45Z INFO ScriptHandler] Defaulting to powershell
+[2025-06-24 01:23:45Z INFO ScriptHandler] Which2: 'powershell'
+[2025-06-24 01:23:45Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp\85c151c2-abdd-445c-bdd0-4d78ee8664c6.ps1'"'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Working directory: 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\fullstack-docker-app\fullstack-docker-app'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-24 01:23:45Z INFO ProcessInvokerWrapper] Process started with process id 17896, waiting for process exit.
+[2025-06-24 01:23:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '55c4d910-1030-4342-b8c4-19ed8a6deb1a', success rate: 1/1.
+[2025-06-24 01:23:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '402d8613-0f5f-4567-9049-a292ca2ca52a', success rate: 1/1.
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper] Finished process 17896 with exit code 0, and elapsed time 00:00:00.2955371.
+[2025-06-24 01:23:46Z INFO CreateStepSummaryCommand] Step Summary file (E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp\_runner_file_commands\step_summary_6cd46d7e-d7f3-4f64-9c8d-8a3e0bc560c1) is empty; skipping attachment upload
+[2025-06-24 01:23:46Z INFO StepsRunner] Step result: 
+[2025-06-24 01:23:46Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "402d8613-0f5f-4567-9049-a292ca2ca52a",
+  "stepContextName": "__run",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-06-24T01:23:45.763608Z",
+  "finishTime": "2025-06-24T01:23:46.1484196Z"
+}.
+[2025-06-24 01:23:46Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-06-24 01:23:46Z INFO StepsRunner] Current state: job state = ''
+[2025-06-24 01:23:46Z INFO StepsRunner] Processing step: DisplayName='Build backend image'
+[2025-06-24 01:23:46Z INFO StepsRunner] Evaluating: success()
+[2025-06-24 01:23:46Z INFO StepsRunner] Result: true
+[2025-06-24 01:23:46Z INFO StepsRunner] Starting the step.
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:46Z INFO StepsRunner] Which2: 'chcp'
+[2025-06-24 01:23:46Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Working directory: 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper] Process started with process id 18096, waiting for process exit.
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper] Finished process 18096 with exit code 0, and elapsed time 00:00:00.0088751.
+[2025-06-24 01:23:46Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Temp': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp'
+[2025-06-24 01:23:46Z INFO ExecutionContext] Write event payload to E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Temp': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp'
+[2025-06-24 01:23:46Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-06-24 01:23:46Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command error
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command group
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-06-24 01:23:46Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-06-24 01:23:46Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-06-24 01:23:46Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-06-24 01:23:46Z INFO ScriptHandler] Defaulting to powershell
+[2025-06-24 01:23:46Z INFO ScriptHandler] Which2: 'powershell'
+[2025-06-24 01:23:46Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:46Z INFO HostContext] Well known directory 'Temp': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp'
+[2025-06-24 01:23:46Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-06-24 01:23:46Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-06-24 01:23:46Z INFO ScriptHandler] Defaulting to powershell
+[2025-06-24 01:23:46Z INFO ScriptHandler] Which2: 'powershell'
+[2025-06-24 01:23:46Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp\16984201-4a83-4bad-aaeb-66c7b961cee2.ps1'"'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Working directory: 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\fullstack-docker-app\fullstack-docker-app'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-24 01:23:46Z INFO ProcessInvokerWrapper] Process started with process id 5388, waiting for process exit.
+[2025-06-24 01:23:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bf732bdc-1119-4837-b1b7-9d01117f9555', success rate: 1/1.
+[2025-06-24 01:23:46Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-06-24 01:23:46Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-24 01:23:46Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag\blocks\1c84b75e-3096-40bc-a34d-a01b3ec527cd_55c4d910-1030-4342-b8c4-19ed8a6deb1a.1
+[2025-06-24 01:23:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bf732bdc-1119-4837-b1b7-9d01117f9555', success rate: 1/1.
+[2025-06-24 01:23:47Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-24 01:23:47Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag\blocks\1c84b75e-3096-40bc-a34d-a01b3ec527cd_402d8613-0f5f-4567-9049-a292ca2ca52a.1
+[2025-06-24 01:23:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bf732bdc-1119-4837-b1b7-9d01117f9555', success rate: 1/1.
+[2025-06-24 01:23:48Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2025-06-24 01:23:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bf732bdc-1119-4837-b1b7-9d01117f9555', success rate: 1/1.
+[2025-06-24 01:23:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bf732bdc-1119-4837-b1b7-9d01117f9555', success rate: 1/1.
+[2025-06-24 01:23:51Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:51Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:51Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bf732bdc-1119-4837-b1b7-9d01117f9555', success rate: 1/1.
+[2025-06-24 01:23:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bf732bdc-1119-4837-b1b7-9d01117f9555', success rate: 1/1.
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper] Finished process 5388 with exit code 0, and elapsed time 00:00:12.0340068.
+[2025-06-24 01:23:58Z INFO CreateStepSummaryCommand] Step Summary file (E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp\_runner_file_commands\step_summary_9520d178-5803-4ee6-80c1-f6a0887efea2) is empty; skipping attachment upload
+[2025-06-24 01:23:58Z INFO StepsRunner] Step result: 
+[2025-06-24 01:23:58Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "bf732bdc-1119-4837-b1b7-9d01117f9555",
+  "stepContextName": "__run_2",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 13,
+  "startTime": "2025-06-24T01:23:46.1497161Z",
+  "finishTime": "2025-06-24T01:23:58.2650531Z"
+}.
+[2025-06-24 01:23:58Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-06-24 01:23:58Z INFO StepsRunner] Current state: job state = ''
+[2025-06-24 01:23:58Z INFO StepsRunner] Processing step: DisplayName='Build frontend image'
+[2025-06-24 01:23:58Z INFO StepsRunner] Evaluating: success()
+[2025-06-24 01:23:58Z INFO StepsRunner] Result: true
+[2025-06-24 01:23:58Z INFO StepsRunner] Starting the step.
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:58Z INFO StepsRunner] Which2: 'chcp'
+[2025-06-24 01:23:58Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Working directory: 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper] Process started with process id 13348, waiting for process exit.
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper] Finished process 13348 with exit code 0, and elapsed time 00:00:00.0090390.
+[2025-06-24 01:23:58Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Temp': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp'
+[2025-06-24 01:23:58Z INFO ExecutionContext] Write event payload to E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Temp': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp'
+[2025-06-24 01:23:58Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-06-24 01:23:58Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command error
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command group
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-06-24 01:23:58Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-06-24 01:23:58Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-06-24 01:23:58Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-06-24 01:23:58Z INFO ScriptHandler] Defaulting to powershell
+[2025-06-24 01:23:58Z INFO ScriptHandler] Which2: 'powershell'
+[2025-06-24 01:23:58Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:58Z INFO HostContext] Well known directory 'Temp': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp'
+[2025-06-24 01:23:58Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-06-24 01:23:58Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-06-24 01:23:58Z INFO ScriptHandler] Defaulting to powershell
+[2025-06-24 01:23:58Z INFO ScriptHandler] Which2: 'powershell'
+[2025-06-24 01:23:58Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp\536e90d2-c609-4593-a85b-4ba0425d0a5b.ps1'"'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Working directory: 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\fullstack-docker-app\fullstack-docker-app'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-24 01:23:58Z INFO ProcessInvokerWrapper] Process started with process id 14956, waiting for process exit.
+[2025-06-24 01:23:58Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-24 01:23:58Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag\blocks\1c84b75e-3096-40bc-a34d-a01b3ec527cd_bf732bdc-1119-4837-b1b7-9d01117f9555.1
+[2025-06-24 01:23:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '17dc4158-2499-4093-ab9e-31c21c404013', success rate: 1/1.
+[2025-06-24 01:23:58Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper] Finished process 14956 with exit code 1, and elapsed time 00:00:00.6905679.
+[2025-06-24 01:23:59Z INFO CreateStepSummaryCommand] Step Summary file (E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp\_runner_file_commands\step_summary_c2a3022d-416e-4565-896d-8d44c23f26ee) is empty; skipping attachment upload
+[2025-06-24 01:23:59Z INFO StepsRunner] Step result: Failed
+[2025-06-24 01:23:59Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "17dc4158-2499-4093-ab9e-31c21c404013",
+  "stepContextName": "__run_3",
+  "result": "failed",
+  "errorMessages": [
+    "Process completed with exit code 1."
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-06-24T01:23:58.2660896Z",
+  "finishTime": "2025-06-24T01:23:59.0162966Z"
+}.
+[2025-06-24 01:23:59Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2025-06-24 01:23:59Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-24 01:23:59Z INFO StepsRunner] Processing step: DisplayName='Login to Docker Hub'
+[2025-06-24 01:23:59Z INFO StepsRunner] Evaluating: success()
+[2025-06-24 01:23:59Z INFO StepsRunner] Result: false
+[2025-06-24 01:23:59Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-06-24 01:23:59Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-06-24 01:23:59Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-24 01:23:59Z INFO StepsRunner] Processing step: DisplayName='Push backend image'
+[2025-06-24 01:23:59Z INFO StepsRunner] Evaluating: success()
+[2025-06-24 01:23:59Z INFO StepsRunner] Result: false
+[2025-06-24 01:23:59Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-06-24 01:23:59Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-06-24 01:23:59Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-24 01:23:59Z INFO StepsRunner] Processing step: DisplayName='Push frontend image'
+[2025-06-24 01:23:59Z INFO StepsRunner] Evaluating: success()
+[2025-06-24 01:23:59Z INFO StepsRunner] Result: false
+[2025-06-24 01:23:59Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-06-24 01:23:59Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-06-24 01:23:59Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-24 01:23:59Z INFO StepsRunner] Processing step: DisplayName='Pull backend image'
+[2025-06-24 01:23:59Z INFO StepsRunner] Evaluating: success()
+[2025-06-24 01:23:59Z INFO StepsRunner] Result: false
+[2025-06-24 01:23:59Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-06-24 01:23:59Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-06-24 01:23:59Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-24 01:23:59Z INFO StepsRunner] Processing step: DisplayName='Pull frontend image'
+[2025-06-24 01:23:59Z INFO StepsRunner] Evaluating: success()
+[2025-06-24 01:23:59Z INFO StepsRunner] Result: false
+[2025-06-24 01:23:59Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-06-24 01:23:59Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-06-24 01:23:59Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-24 01:23:59Z INFO StepsRunner] Processing step: DisplayName='Stop and remove old containers'
+[2025-06-24 01:23:59Z INFO StepsRunner] Evaluating: success()
+[2025-06-24 01:23:59Z INFO StepsRunner] Result: false
+[2025-06-24 01:23:59Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-06-24 01:23:59Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-06-24 01:23:59Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-24 01:23:59Z INFO StepsRunner] Processing step: DisplayName='Start new containers'
+[2025-06-24 01:23:59Z INFO StepsRunner] Evaluating: success()
+[2025-06-24 01:23:59Z INFO StepsRunner] Result: false
+[2025-06-24 01:23:59Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-06-24 01:23:59Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-06-24 01:23:59Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-24 01:23:59Z INFO StepsRunner] Processing step: DisplayName='Clean up old images'
+[2025-06-24 01:23:59Z INFO StepsRunner] Evaluating: success()
+[2025-06-24 01:23:59Z INFO StepsRunner] Result: false
+[2025-06-24 01:23:59Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-06-24 01:23:59Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-06-24 01:23:59Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-24 01:23:59Z INFO StepsRunner] Processing step: DisplayName='Post Checkout code'
+[2025-06-24 01:23:59Z INFO StepsRunner] Evaluating: always()
+[2025-06-24 01:23:59Z INFO StepsRunner] Result: true
+[2025-06-24 01:23:59Z INFO StepsRunner] Starting the step.
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:59Z INFO StepsRunner] Which2: 'chcp'
+[2025-06-24 01:23:59Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Working directory: 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper] Process started with process id 11664, waiting for process exit.
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper] Finished process 11664 with exit code 0, and elapsed time 00:00:00.0079262.
+[2025-06-24 01:23:59Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Actions': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions'
+[2025-06-24 01:23:59Z INFO ActionManager] Load action that reference repository from 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions\actions\checkout\v4'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Actions': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions'
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-24 01:23:59Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-06-24 01:23:59Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-06-24 01:23:59Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Temp': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp'
+[2025-06-24 01:23:59Z INFO ExecutionContext] Write event payload to E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Work': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Temp': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp'
+[2025-06-24 01:23:59Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "adusimp/fullstack-docker-app"
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'ssh-user': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 51,
+  "col": 14,
+  "lit": "git"
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 54,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 59,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": ""
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": ""
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 76,
+  "col": 14,
+  "lit": "1"
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 79,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 94,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 97,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-24 01:23:59Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-06-24 01:23:59Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command error
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command group
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-06-24 01:23:59Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Externals': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\externals'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   File name: 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\externals\node20\bin\node.exe'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Arguments: '"E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Working directory: 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\fullstack-docker-app\fullstack-docker-app'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper] Process started with process id 4944, waiting for process exit.
+[2025-06-24 01:23:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '17dc4158-2499-4093-ab9e-31c21c404013', success rate: 1/1.
+[2025-06-24 01:23:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '14c6b87d-56a9-44d2-93a2-f8ad48a15517', success rate: 1/1.
+[2025-06-24 01:23:59Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-06-24 01:23:59Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2025-06-24 01:23:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '14c6b87d-56a9-44d2-93a2-f8ad48a15517', success rate: 1/1.
+[2025-06-24 01:23:59Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-24 01:23:59Z INFO ProcessInvokerWrapper] Finished process 4944 with exit code 0, and elapsed time 00:00:00.8862315.
+[2025-06-24 01:23:59Z INFO CreateStepSummaryCommand] Step Summary file (E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp\_runner_file_commands\step_summary_aa8a91ad-6073-42fe-98d5-9c7e8187b55c) is empty; skipping attachment upload
+[2025-06-24 01:23:59Z INFO StepsRunner] Step result: 
+[2025-06-24 01:23:59Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "14c6b87d-56a9-44d2-93a2-f8ad48a15517",
+  "result": "succeeded",
+  "errorMessages": [
+    "The process 'C:\\Program Files\\Git\\cmd\\git.exe' failed with exit code 128"
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-06-24T01:23:59.0196032Z",
+  "finishTime": "2025-06-24T01:23:59.9277653Z"
+}.
+[2025-06-24 01:23:59Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-06-24 01:23:59Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-24 01:23:59Z INFO JobRunner] Finalize job.
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:23:59Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:23:59Z INFO JobExtension] Initialize Env context
+[2025-06-24 01:23:59Z INFO JobExtension] Initialize steps context
+[2025-06-24 01:23:59Z INFO JobExtension] Total accessible running process: 248.
+[2025-06-24 01:23:59Z INFO JobExtension] Inspecting process environment variables. PID: 12884 (SearchProtocolHost)
+[2025-06-24 01:23:59Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2025-06-24 01:23:59Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "c8623155-bde9-41cf-829e-445b433dde2d",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-06-24T01:23:59.933541Z",
+  "finishTime": "2025-06-24T01:23:59.950949Z"
+}.
+[2025-06-24 01:23:59Z INFO JobRunner] Job result after all job steps finish: Failed
+[2025-06-24 01:23:59Z INFO JobRunner] Completing the job execution context.
+[2025-06-24 01:23:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '14c6b87d-56a9-44d2-93a2-f8ad48a15517', success rate: 1/1.
+[2025-06-24 01:23:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c8623155-bde9-41cf-829e-445b433dde2d', success rate: 1/1.
+[2025-06-24 01:23:59Z INFO JobRunner] Shutting down the job server queue.
+[2025-06-24 01:23:59Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-06-24 01:24:00Z INFO JobServerQueue] All queue process task stopped.
+[2025-06-24 01:24:00Z INFO JobServerQueue] Web console line queue drained.
+[2025-06-24 01:24:00Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2025-06-24 01:24:00Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2025-06-24 01:24:00Z INFO JobServerQueue] File upload queue drained.
+[2025-06-24 01:24:00Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-06-24 01:24:00Z INFO JobServerQueue] Uploading 4 file(s) in one shot through results service.
+[2025-06-24 01:24:00Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-24 01:24:00Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag\blocks\1c84b75e-3096-40bc-a34d-a01b3ec527cd_17dc4158-2499-4093-ab9e-31c21c404013.1
+[2025-06-24 01:24:01Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-24 01:24:01Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag\blocks\1c84b75e-3096-40bc-a34d-a01b3ec527cd_14c6b87d-56a9-44d2-93a2-f8ad48a15517.1
+[2025-06-24 01:24:02Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-24 01:24:02Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag\blocks\1c84b75e-3096-40bc-a34d-a01b3ec527cd_c8623155-bde9-41cf-829e-445b433dde2d.1
+[2025-06-24 01:24:03Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-06-24 01:24:03Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag\blocks\1c84b75e-3096-40bc-a34d-a01b3ec527cd_b5208d6f-935a-5c1b-8420-8f5f25340020.1
+[2025-06-24 01:24:04Z INFO JobServerQueue] Tried to upload 4 file(s) to results, success rate: 4/4.
+[2025-06-24 01:24:04Z INFO JobServerQueue] Results upload queue drained.
+[2025-06-24 01:24:04Z INFO JobServerQueue] Timeline update queue drained.
+[2025-06-24 01:24:04Z INFO JobServerQueue] Disposing job server ...
+[2025-06-24 01:24:04Z INFO JobServerQueue] Disposing results server ...
+[2025-06-24 01:24:04Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-06-24 01:24:04Z INFO TempDirectoryManager] Cleaning runner temp folder: E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_work\_temp
+[2025-06-24 01:24:04Z INFO HostContext] Well known directory 'Bin': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\bin'
+[2025-06-24 01:24:04Z INFO HostContext] Well known directory 'Root': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner'
+[2025-06-24 01:24:04Z INFO HostContext] Well known directory 'Diag': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag'
+[2025-06-24 01:24:04Z INFO HostContext] Well known config file 'Telemetry': 'E:\học tập\01.AnNDB\Docker\fullstack-docker-app\actions-runner\_diag\.telemetry'
+[2025-06-24 01:24:04Z INFO JobRunner] Raising job completed against run service
+[2025-06-24 01:24:05Z INFO Worker] Job completed.
