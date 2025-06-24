@@ -2,7 +2,7 @@ name: Build, Push, Pull & Deploy (Self-hosted)
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build_push_pull_run:
@@ -12,7 +12,6 @@ jobs:
       DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
 
     steps:
-      
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -25,7 +24,7 @@ jobs:
         run: docker build -t binhanvku462004/my-fullstack-frontend:latest ./frontend
 
       - name: Login to Docker Hub
-        run: echo $DOCKERHUB_TOKEN | docker login -u binhanvku462004 --moichoigame2-stdin
+        run: echo $DOCKERHUB_TOKEN | docker login -u binhanvku462004 --password-stdin
 
       - name: Push backend image
         run: docker push binhanvku462004/my-fullstack-backend:latest
@@ -47,4 +46,3 @@ jobs:
 
       - name: Clean up old images
         run: docker image prune -f
-
