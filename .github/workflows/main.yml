@@ -14,18 +14,24 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./frontend
+
       - name: Run ESLint
         run: npm run lint
+        working-directory: ./frontend
 
       # 5. Check Prettier formatting
       - name: Check Prettier formatting
         run: npm run format
-        
+        working-directory: ./frontend
+
       - name: Build backend image
         run: docker build -t binhanvku462004/my-fullstack-backend:latest ./backend
 
       - name: Build frontend image
-        run: docker build -t binhanvku462004/my-fullstack-frontend:latest ./frontend 
+        run: docker build -t binhanvku462004/my-fullstack-frontend:latest ./frontend
 
       - name: Login to Docker Hub (Windows workaround)
         run: docker login -u $env:DOCKERHUB_USERNAME -p $env:DOCKERHUB_TOKEN
